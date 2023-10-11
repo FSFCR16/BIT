@@ -1,0 +1,38 @@
+body{
+    width: auto;
+    height: 100vh;
+}
+
+.contenedorPadre{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4,21rem);
+    grid-template-rows: 10rem;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    padding: 50px;
+}
+
+
+.contenidoFichas{
+    display: grid;
+    position: relative;
+    grid-template-columns: 9rem 12rem;
+    grid-template-rows: 10rem;
+    background-color: rgb(124, 124, 124);
+    border-radius: 5px;
+
+}
+
+
+.estiloImg{
+    width: 9rem;
+    height: 10rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.infoTexto{
+    margin-left: 10px;
+    align-content: center;
+    color: white;
+}
