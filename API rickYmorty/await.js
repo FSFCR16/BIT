@@ -11,11 +11,13 @@ function traerRick() {
 }*/
 
 let contenedorGeneral = document.querySelector(".contenedorPadre")
+let botonTraer = document.querySelector(".traer")
 
-async function traerAsyncRick() {
-    const response = await fetch("https://rickandmortyapi.com/api/character/2,8,9,132,12,14,120,1,3")
-    data = await response.json()
-    /*let contenedorFichas = document.querySelector(".contenidoFichas")*/
+async function traerAsyncRick(url) {
+    console.log(url)
+    const response = await fetch(url);
+    data = await response.json();
+    console.log(data)
 
 
     for (let i=0; i<data.length; i++){
@@ -23,15 +25,22 @@ async function traerAsyncRick() {
         let contenedorFichas = document.createElement("article")
         contenedorGeneral.appendChild(contenedorFichas)
         contenedorFichas.classList.add("contenidoFichas")
+
         let contenedorImg = document.createElement("section")
         contenedorFichas.appendChild(contenedorImg)
+
         let contenedorInfo = document.createElement("section")
         contenedorFichas.appendChild(contenedorInfo)
+
         contenedorImg.innerHTML +=  `<img src=${data[i].image} class="estiloImg"></img>`
         contenedorInfo.innerHTML += `<p> Nombre: ${data[i].name} </p> <p> Status: ${data[i].status}</p> <p>Species: ${data[i].species}</p> <p>Gender: ${data[i].gender} </p>`
         contenedorInfo.classList.add("infoTexto")
     }    
 }
-traerAsyncRick()
+botonTraer.addEventListener("click", function () {
+    let contenidoInput = document.getElementById("escoger")
+    console.log(contenidoInput.value)
+    traerAsyncRick(`https://rickandmortyapi.com/api/character/,${contenidoInput.value}`);
+});
 
 

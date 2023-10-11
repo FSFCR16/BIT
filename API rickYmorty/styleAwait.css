@@ -2,15 +2,38 @@ body{
     width: auto;
     height: 100vh;
 }
+.ContenedorInput{
+    display: flex;
+    height: 8vh;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 
+.contenedorLaIn{
+    display: flex;
+    align-content: center;
+}
+.labelInput{
+    font-size: 18px;
+    padding: 5px;
+
+}
+#escoger{
+    height: 20px;
+    resize: none;
+    padding: 5px 10px;
+}
 .contenedorPadre{
     display: grid;
     position: relative;
-    grid-template-columns: repeat(4,21rem);
+    justify-content: center;
+    grid-template-columns: repeat(3,21rem);
     grid-template-rows: 10rem;
-    row-gap: 5rem;
+    row-gap: 2rem;
     column-gap: 2rem;
     padding: 50px;
+    padding-top: 20px;
 }
 
 
