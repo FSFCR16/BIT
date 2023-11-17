@@ -1,0 +1,147 @@
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
+.a-class{
+    text-decoration: none;
+    color: black;
+}
+.imagenSvg{
+    cursor: pointer;
+}
+.contenedorSvg{
+    --content-pseudo: "0";
+    --display-psaudo: none;
+}
+.btn-class{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.btn-class:hover{
+    border-radius: 5px;
+    outline: 0.1px solid #7f00b2;
+}
+.contenedorSvg::before{
+    display: var(--display-psaudo);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: var(--content-pseudo);
+    font-size: 11px;
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+    width: 17px;
+    height:17px;
+    margin-left: 20px;
+    top: 11px;
+
+}
+
+.c-destacados{
+    height: 5rem;
+}
+
+.c-tarjetas{
+    background-color: #7f00b2;
+    height: 20rem;
+}
+.btn-color{
+    background-color: #7f00b2;
+}
+.añadir-carrito{
+    background-color: #7f00b2;
+    color: white;
+    font-family: "regular";
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.contenedorPerspective{
+    perspective:1000px;
+
+}
+
+.card-inner{
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+
+}
+.cardRotate{
+    transform: rotateY(180deg);
+}
+.cardRotateDos{
+    transform: rotateY(360deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+
+.title-back{
+    font-family: "regular";
+}
+.precio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7f00b2;
+    color: white;
+    width: 10rem;
+    border-radius: 10px;
+}
+.cartasDiseño{
+    display: grid;
+    grid-template-rows: repeat(auto-fill);
+    row-gap: 10px;
+}
+
+.carts{
+    display:grid;
+    grid-template-columns: 18% 50% 30%;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.imgPopUp{
+    padding: 5px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px;
+}
+
+.botonQuitar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #7f00b2;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-family: "Regular";
+}
