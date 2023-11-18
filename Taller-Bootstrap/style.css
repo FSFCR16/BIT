@@ -145,3 +145,14 @@
     font-size: 13px;
     font-family: "Regular";
 }
+
+.botonPagar{
+    background-color: #7f00b2;
+    color: white;
+    font-family: "regular";
+    width: 10rem;
+    height: 2.2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
