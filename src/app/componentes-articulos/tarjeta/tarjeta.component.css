@@ -1,0 +1,74 @@
+.card-content{
+    display: grid;
+    width: 17rem;
+    height: 26rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+img{
+    width: 15rem;
+    height: 15rem;
+    z-index: 0;
+}
+.aviso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 7rem;
+    transform: translate(68px, -14.9rem);
+}
+p{
+    margin: 0;
+}
+.contenedroDescuentos{
+    display: grid;
+    width: 9rem;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin: 0;
+}
+.info-pc{
+    margin-bottom: 8px; 
+}
+
+.strike{
+    font-size: 14px;
+    color: rgb(191, 191, 191);
+}
+.precio-descuento{
+    font-size: 19px;
+    font-weight: bold;
+}
+.caja-descuento{
+    justify-self: center;
+
+    width: 2rem;
+    height: 1.1rem;
+    background-color: green;
+    color: white;
+    padding-top: 1px;
+    padding-left: 4px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+.precio-tarjeta{
+    margin-right: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(200, 0, 0);
+}
+
+.pago-tarjeta{
+    display: flex;
+
+}
+.tarjetas-pago{
+    width: 25px;
+    height: 25px;
+}

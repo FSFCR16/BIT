@@ -1,0 +1,33 @@
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+.aside-et{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 7px;
+    height: auto;
+
+}
+p{
+    margin: 0;
+}
+.cont-text-filter{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: bolder;
+    height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.cont-descuentos{
+    display: grid;
+    row-gap: 10px;
+    height: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cont-categorias{
+    height: auto;
+}

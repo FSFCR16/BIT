@@ -1,0 +1,11 @@
+body{
+    flex-direction: column;
+
+}
+
+header{
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+}
+

@@ -1,0 +1,36 @@
+.header-cards{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+
+.cont-cuadrados-and-lines{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 60%;
+}
+.cont-cuadrados{
+    display: grid;
+    align-items: center;
+    row-gap: 1px;
+    column-gap: 1px;
+    cursor: pointer;
+}
+.cuadro-div{
+    border: 1px solid black;
+}
+.cont-lineas{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+

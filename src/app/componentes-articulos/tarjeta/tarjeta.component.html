@@ -1,0 +1,18 @@
+<section class="card-content">
+  <article>
+    <img src={{img}} alt="">
+    <p class="aviso">{{llegada}}</p>
+  </article>
+  <article class="info-pc">
+      <p>{{caracteristicas}}</p>
+  </article>
+  <article>
+    <section class="contenedroDescuentos">
+      <s class="strike">${{ getPrecioDescuentoFormato() }}</s>
+      -
+      <span class="caja-descuento">{{porcentajeDecuento}}%</span>
+    </section>
+    <p class="precio-descuento">${{precioConDescuento | number}}</p>
+    <p class="precio-tarjeta">{{precioTarjeta | number}}</p>
+  </article>
+</section>
