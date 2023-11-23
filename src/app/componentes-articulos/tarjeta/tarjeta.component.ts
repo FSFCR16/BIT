@@ -21,7 +21,7 @@ export class TarjetaComponent {
   pocentaje(){
     this.precioConDescuento= this.precioDecuento - (this.precioDecuento * (this.porcentajeDecuento/100))
   }
-  ngOnInit() {
+  ngOnInit() { 
     this.pocentaje();
   }
   getPrecioDescuentoFormato(): string {

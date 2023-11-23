@@ -1,10 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/e695a2b548e145591a266fc50eb492e0?family=Regular);
+
 body{
     flex-direction: column;
 
 }
 
 header{
-    height: 8vh;
+    height: 9vh;
     width: 100%;
     background-color: black;
 }

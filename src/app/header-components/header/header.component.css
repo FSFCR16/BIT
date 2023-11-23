@@ -5,18 +5,20 @@
     justify-content: center;
 
 }
+
 p{
     margin: 0;
 }
+
 .cont-part-one-header{
     padding-top: 10px;
     display: grid;
     width: 62.5vw;
     margin-right: 15px;
-    border: 1px solid red ;
-    grid-template-columns: 3rem 10.3rem 37rem auto;
+    grid-template-columns: 3rem 11.1rem 37rem auto;
 
 }
+
 .linea-nav{
     display: flex;
     align-items: center;
@@ -25,6 +27,7 @@ p{
 
 
 }
+
 .img-nav{
     display: flex;
     align-items: center;
@@ -51,7 +54,7 @@ p{
 
 }
 .input{
-    height:2.3rem ;
+    height:2.42rem ;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
@@ -72,10 +75,24 @@ p{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-left: 1px solid rgb(217, 217, 217);
-    bottom:9px;
+    bottom:10px;
     background-color: white;
     cursor: pointer;
 }
 .cont-logIn{
     display: flex;
+}
+.cont-links-header{
+    display: flex;
+    border-top:1px solid white ;
+    padding-top: 9px;
+    column-gap: 10px;
+    font-size: 13px;
+    font-family: "regular";
+    position: relative;
+    bottom: 12px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
 }

@@ -1,0 +1,29 @@
+p{
+    margin: 0;
+    position: relative;
+    top: 1px;
+}
+.btn-navbr{
+    display: flex;
+    column-gap: 5px;
+    height: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "regular";
+}
+.btn-navbr:hover{
+    color: rgb(214, 214, 214);
+}
+
+.borderRight{
+    border-right: 1px solid gray;
+}
+
+.borderLeft{
+    border-left: 1px solid gray;
+}
