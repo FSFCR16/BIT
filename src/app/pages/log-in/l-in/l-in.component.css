@@ -123,10 +123,3 @@ p{
 .btn-alternativas:hover{
     background-color:rgb(120, 32, 202); ;
 }
-
-.cambio-grid{
-    display: grid;
-}
-.cambio-none{
-    display: none;
-}

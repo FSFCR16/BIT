@@ -34,11 +34,9 @@ export class LInComponent {
   cambiarDisplayIni(){
     this.trueOrfalse=true
     this.ngAfterViewInit()
-    this.renderer.addClass(this.putInfo.nativeElement, "cambio-grid");
-    this.renderer.removeClass(this.putInfo.nativeElement, "cambio-none");
 
-    const elementoDelOtroComponente = this.infoCreate.obtenerElemento().nativeElement;
-    this.renderer.removeClass(elementoDelOtroComponente, 'cambio-grid');
+    this.infoCreate.obtenerElemento().nativeElement.hidden= true
+    this.putInfo.nativeElement.hidden= false
 
   }
 
@@ -49,10 +47,9 @@ export class LInComponent {
       this.renderer.removeClass(this.botonIniciarSesion.nativeElement, "boton-log");
       this.renderer.addClass(this.botonCrearCuenta.nativeElement, "boton-log");
     }
-    this.renderer.addClass(this.putInfo.nativeElement, "cambio-none");
 
-    const elementoDelOtroComponente = this.infoCreate.obtenerElemento().nativeElement;
-    this.renderer.addClass(elementoDelOtroComponente, 'cambio-grid');
+    this.infoCreate.obtenerElemento().nativeElement.hidden= false
+    this.putInfo.nativeElement.hidden= true
 
   }
 

@@ -3,7 +3,7 @@ p{
     font-family: "regular";
 }
 .cont-crear-cuenta{
-    display: none;
+    display: grid;
     row-gap: 15px;
 }
 .form-crear{
