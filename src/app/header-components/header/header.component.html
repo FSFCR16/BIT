@@ -12,7 +12,7 @@
         <img style="width: 70px; height: 45px;" src="https://i.linio.com/cms/8f6d44f2-8556-11ee-b9ea-1eb276e2b5de.png"
           alt="">
       </section>
-      <section class="name-brand">
+      <section class="name-brand" routerLink="/vista-detalle" style="cursor: pointer;">
         <p class="name-benu">BENNU</p>
         <p class="name-santiago">BY SANTIAGO</p>
       </section>
@@ -31,10 +31,10 @@
       <section class="cont-inicio" routerLink="/log-in">
         <app-button-header borderRight="borderRight" [svgContent]="svgContentUno" accionSvg="Iniciar sesion"></app-button-header>
       </section>
-      <section class="cont-pedidos">
+      <section class="cont-pedidos" >
         <app-button-header borderRight="borderRight" [svgContent]="svgContentDos" accionSvg="Mis pedidos"></app-button-header>
       </section>
-      <section class="cont-carrito">
+      <section class="cont-carrito" routerLink="/vista-carrito">
         <app-button-header [svgContent]="svgContentTres" accionSvg="Carrito"></app-button-header>
       </section>
     </article>

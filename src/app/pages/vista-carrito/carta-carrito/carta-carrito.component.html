@@ -1,0 +1,18 @@
+<section class="cont-card-carrito d-flex column-gap-4" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+    <article style="border-right: 1px solid rgb(223, 223, 223);">
+        <img src="{{img}}" alt="" style="width: 100px; height: auto; padding: 10px;">
+    </article>
+    <article style="display: flex; align-items: center; row-gap: 3px; column-gap: 10px;">
+        <section style="width: 40rem; padding: 20px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgb(223, 223, 223); height: 100%; "> 
+            <article>
+                <p style="font-weight: bolder;">{{idElemento}}</p>
+            </article>
+            <article style="display: flex; flex-wrap: wrap;">
+                <p>{{caracteristicas}}</p>
+            </article>
+        </section>
+        <section>
+            <p style="font-size: 15px; color: rgb(194, 33, 33);">{{precioConDescuento | number:'1.0-0' }} COP$</p>
+        </section>      
+    </article>
+</section>

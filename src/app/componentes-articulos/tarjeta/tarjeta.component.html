@@ -1,4 +1,4 @@
-<section class="card-content">
+<section class="card-content" id="{{idElemento}}" #contenidoCard>
   <article>
     <img src={{img}} alt="">
     <p class="aviso">{{llegada}}</p>
@@ -14,5 +14,8 @@
     </section>
     <p class="precio-descuento">${{precioConDescuento | number}}</p>
     <p class="precio-tarjeta">{{precioTarjeta | number}}</p>
+  </article>
+  <article class="cont-btn">
+    <button class="btn-añadir-carrito" id="{{idElemento}}" (click)="obtenerId($event)">añadir carrito</button>
   </article>
 </section>

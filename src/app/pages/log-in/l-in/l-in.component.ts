@@ -12,6 +12,7 @@ import { CreateAccountComponent } from '../create-account/create-account.compone
   styleUrl: './l-in.component.css'
 })
 export class LInComponent {
+  
 
   @ViewChild('putInfo') putInfo!: ElementRef;
   @ViewChild(CreateAccountComponent) infoCreate!: CreateAccountComponent;
@@ -52,5 +53,7 @@ export class LInComponent {
     this.putInfo.nativeElement.hidden= true
 
   }
+
+  
 
 }

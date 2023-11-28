@@ -1,10 +1,12 @@
 .card-content{
     display: grid;
     width: 17rem;
-    height: 26rem;
+    height: 31rem;
+    row-gap:5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
     padding: 10px;
+    padding-bottom: 0;
 }
 
 img{
@@ -32,9 +34,6 @@ p{
     grid-template-columns: auto auto auto;
     align-items: center;
     margin: 0;
-}
-.info-pc{
-    margin-bottom: 8px; 
 }
 
 .strike{
@@ -71,4 +70,23 @@ p{
 .tarjetas-pago{
     width: 25px;
     height: 25px;
+}
+
+.cont-btn{
+    display: grid;
+    width: 100%;
+    height: 3rem;
+    align-content:center;
+}
+
+.btn-añadir-carrito{
+    width: 80%;
+    height: 2rem;
+    justify-self: center;
+    background-color: black;
+    color: white;
+    font-family: "regular";
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }

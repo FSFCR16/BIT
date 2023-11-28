@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef,Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TarjetaComponent } from '../../componentes-articulos/tarjeta/tarjeta.component';
 import { HeaderCardComponent } from '../../componentes-articulos/header-card/header-card.component';
